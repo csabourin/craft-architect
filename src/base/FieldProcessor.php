@@ -395,7 +395,7 @@ class FieldProcessor extends Processor
      */
     private function mergeFieldLayout(FieldLayout $oldFieldLayout, array $newFields): array
     {
-        $oldFields = $oldFieldLayout->getFields();
+        $oldFields = $oldFieldLayout->getCustomFields();
         $oldIDs = array_map(function ($a) {
             return $a['id'];
         }, $oldFields);
